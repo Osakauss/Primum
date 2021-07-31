@@ -1,7 +1,15 @@
 #ifndef __LETTRE_HEADER__
 #define __LETTRE_HEADER__
-#include <efi.h>
+#include <types.h>
 
+typedef struct
+{
+    u32                   Type;
+    u64     PhysicalStart;
+    u64      VirtualStart;
+    u64                   NumberOfPages;
+    u64                   Attribute;
+} LETTRE_MEMORY_DESCRIPTOR;
 
 
 typedef struct{
