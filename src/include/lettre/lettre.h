@@ -1,7 +1,7 @@
 #ifndef __LETTRE_HEADER__
 #define __LETTRE_HEADER__
 #include <types.h>
-
+#include <efi.h>
 typedef struct
 {
     u32                   Type;
