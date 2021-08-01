@@ -20,7 +20,7 @@ build: BOOTX64.EFI
 
 BOOTX64.EFI: setupDirs $(OBJ)
 	@echo [$(CC)][LINKING ALL]
-	$@(CC) $(LFLAGS) $(OBJ) -o $@
+	@$(CC) $(LFLAGS) $(OBJ) -o $@
 	
 
 setupDirs:
