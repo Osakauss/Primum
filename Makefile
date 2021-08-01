@@ -19,7 +19,8 @@ all: build
 build: BOOTX64.EFI
 
 BOOTX64.EFI: setupDirs $(OBJ)
-	$(CC) $(LFLAGS) $(OBJ) -o $@
+	@echo [$(CC)][LINKING ALL]
+	$@(CC) $(LFLAGS) $(OBJ) -o $@
 	
 
 setupDirs:
@@ -39,26 +40,7 @@ $(BUILDDIR)/%.s.o: $(SRCDIR)/%.s
 	@echo [$(AS)][$<]
 	@$(AS) $(ASFLAGS) $< -o $@
 
-
-
-
-
-
-
-
-
-
-
-makeos:
-	@#mkdir -p disk/EFI && mkdir disk/EFI/Boot
-	@#cp BOOTX64.EFI disk/EFI/Boot/
-	@#cp kernel disk/
-	@cp primum.cfg disk/
-	#python3 imgbuilder.py disk $(DISK) 
-
 clean:
 	@rm -rf $(BUILDDIR) *.EFI $(DISK)/kernel kernel disk/*
 	-@#mdeltree -i $(DISK) ::
 
-run: all
-	#qemu-system-x86_64 -drive format=raw,unit=0,file=$(DISK) -bios bios64.bin -m 256M -vga std -name Primum -machine q35 -serial stdio

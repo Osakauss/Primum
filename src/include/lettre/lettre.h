@@ -21,7 +21,7 @@ typedef struct{
 }LETTRE_PROTOCAL_FRAMEBUFFER;
 
 typedef struct{
-    LETTRE_MEMORY_DESCRIPTOR* MMap;
+    EFI_MEMORY_DESCRIPTOR* MMap;
 	unsigned long long     MMapSize;
 	unsigned long long     MMapDescriptorSize;
 }LETTRE_PROTOCAL_MMAP;
