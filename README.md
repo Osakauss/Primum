@@ -13,6 +13,6 @@ make
 ```
 
 ## Credits
-ThatOsDev youtube channel: https://www.youtube.com/channel/UCouyC9D6WFBwc24sqdkS-jw
-ThatOsDev github: https://github.com/ThatOSDev
-ThatOsDev tutorial repo: https://github.com/ThatOSDev/UEFI-Tuts
+ThatOsDev youtube channel: https://www.youtube.com/channel/UCouyC9D6WFBwc24sqdkS-jw<br>
+ThatOsDev github: https://github.com/ThatOSDev<br>
+ThatOsDev tutorial repo: https://github.com/ThatOSDev/UEFI-Tuts<br>
